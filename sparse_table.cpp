@@ -31,7 +31,7 @@ public:
 		for (int l = 1; l <= log[n]; ++l) {
 			for (int i = 0; i < n; ++i) {
 				/*
-					chaeck for valid
+					check for valid
 				*/ 
 				if (i + (1 << (l - 1)) < n)
 					table[i][l] = getMin(table[i][l - 1], 
@@ -59,7 +59,6 @@ public:
 
 void dfs(int v, vector <int>& lvl, vector <int>& pos,
          vector <node>& path, vector <vector<int>>& graph) {
-	// cout << v  << endl;
 	if (pos[v] == -1)
 		pos[v] = path.size();
 	path.push_back({v, lvl[v]});
@@ -73,7 +72,7 @@ void dfs(int v, vector <int>& lvl, vector <int>& pos,
 
 
 int main() {
-	
+
 	int n;
 	cin >> n;
 	vector <vector <int>> graph(n + 1);
