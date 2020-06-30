@@ -33,12 +33,12 @@ int getMaxPathLenght(int n, vector <vector <int>>& edges) {
 			dfs(i, used, g, order);
 
 
-	for (int i = 0; i < n ; ++i) 
+	for (int i = 0; i < n ; ++i) {
 		for (int from : inv[order[i]]) 
 			dp[from] = max(dp[from], 1 + dp[order[i]]);
 		
 		ans = max(ans, dp[order[i]]);
-	
+	}
 
 	return ans;
 }
