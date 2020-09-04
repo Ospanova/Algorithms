@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/kth-largest-element-in-an-array/submissions/
+// https://leetcode.com/problems/kth-largest-element-in-an-array/submissions
 
 class Solution {
 public:
